@@ -20,4 +20,10 @@ export class FreelancerGridComponent implements OnInit {
 
   }
 
+  deleteFreelancer(freelancer) {
+    this.store.dispatch({
+      type: ACTIONS.DELETE_FREELANCER,
+      payload: freelancer,
+    })
+  }
 }
